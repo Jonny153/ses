@@ -38930,8 +38930,7 @@ im.mask($('[name="phone"]'));
 
 window.AOS = __webpack_require__("./node_modules/aos/dist/aos.js");
 AOS.init({
-    duration: 800,
-    disable: 'mobile'
+    duration: 800
 });
 
 __webpack_require__("./resources/assets/js/formvalidation.js");
