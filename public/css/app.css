@@ -34,6 +34,10 @@ button::-moz-focus-inner {
   border: 0 !important;
 }
 
+section {
+  overflow: hidden;
+}
+
 #navbarHeader {
   border-bottom: 1px solid #ffdf00;
   margin-bottom: -8px;
@@ -72,7 +76,7 @@ body {
 
 @media (max-width: 460px) {
   body {
-    padding-top: 145px;
+    padding-top: 125px;
   }
 
   body p {
