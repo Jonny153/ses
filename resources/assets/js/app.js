@@ -15,8 +15,7 @@ im.mask($('[name="phone"]'));
 
 window.AOS = require('aos');
 AOS.init({
-    duration: 800,
-    //disable: 'mobile'
+    duration: 800
 });
 
 
