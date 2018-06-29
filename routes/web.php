@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('main');
-});
+Route::get('/', 'PagesController@main')->name('main');
+
+Route::get('{page}/{subpage?}', 'PagesController@pages')
+    ->where(['page' => '[a-z]+', 'subpage' => '[a-z_]+']);
+
 
 Route::post('/call', 'FeedbackController@call')->name('call');

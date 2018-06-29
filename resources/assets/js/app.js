@@ -97,5 +97,5 @@ $('#callModal').on('show.bs.modal', function (event) {
     let type = button.data('type');
     let modal = $(this);
     modal.find("input[name*='type']").val(type);
-
+    yaCounter49423033.reachGoal('CALL_MODAL');
 });

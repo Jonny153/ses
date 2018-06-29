@@ -12,17 +12,20 @@
   font-weight: 600 !important;
 }
 
-a.simple-link {
-  color: inherit;
+a.black {
+  color: black;
   font-size: inherit;
   text-decoration: none;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
 }
 
-a.simple-link:hover,
-a.simple-link:active,
-a.simple-link:focus {
+a.black:hover,
+a.black:active,
+a.black:focus {
   text-decoration: none;
   outline: none;
+  color: #ffdf00;
 }
 
 button:active,
@@ -34,6 +37,58 @@ button::-moz-focus-inner {
   border: 0 !important;
 }
 
+.btn.btn-dark:hover {
+  color: #ffdf00;
+}
+
+.btn.text-white:hover {
+  color: white;
+}
+
+.btn-pulse {
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+}
+
+.btn-pulse:hover {
+  -webkit-animation: pulse-shadow 1s;
+          animation: pulse-shadow 1s;
+}
+
+@-webkit-keyframes pulse-shadow {
+  0% {
+    -webkit-box-shadow: 0 0;
+            box-shadow: 0 0;
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 10px 20px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 10px 20px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes pulse-shadow {
+  0% {
+    -webkit-box-shadow: 0 0;
+            box-shadow: 0 0;
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 10px 20px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 10px 20px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
 section {
   overflow: hidden;
 }
@@ -43,30 +98,44 @@ section {
   margin-bottom: -8px;
 }
 
-#navbarHeader .nav.main a,
-footer .nav.main a {
-  color: #ffdf00;
-  text-transform: uppercase;
-}
-
-#navbarHeader a.nav-link,
-footer a.nav-link {
+#navbarHeader .nav .nav-link,
+footer .nav .nav-link {
   color: white;
   -webkit-transition: all 0.5s linear 0s;
   transition: all 0.5s linear 0s;
 }
 
-#navbarHeader a.nav-link:hover,
-#navbarHeader a.nav-link.active,
-footer a.nav-link:hover,
-footer a.nav-link.active {
+#navbarHeader .nav .nav-link:hover,
+#navbarHeader .nav .nav-link.active,
+footer .nav .nav-link:hover,
+footer .nav .nav-link.active {
+  color: #ffdf00;
+}
+
+#navbarHeader .nav .nav-link:hover .svgicon,
+#navbarHeader .nav .nav-link.active .svgicon,
+footer .nav .nav-link:hover .svgicon,
+footer .nav .nav-link.active .svgicon {
+  fill: #ffdf00;
+}
+
+#navbarHeader .nav.main .nav-link,
+footer .nav.main .nav-link {
+  color: #ffdf00;
+  text-transform: uppercase;
+}
+
+#navbarHeader .nav.main .nav-link:hover,
+#navbarHeader .nav.main .nav-link.active,
+footer .nav.main .nav-link:hover,
+footer .nav.main .nav-link.active {
   color: white;
 }
 
-#navbarHeader a.nav-link:hover .svgicon,
-#navbarHeader a.nav-link.active .svgicon,
-footer a.nav-link:hover .svgicon,
-footer a.nav-link.active .svgicon {
+#navbarHeader .nav.main .nav-link:hover .svgicon,
+#navbarHeader .nav.main .nav-link.active .svgicon,
+footer .nav.main .nav-link:hover .svgicon,
+footer .nav.main .nav-link.active .svgicon {
   fill: white;
 }
 
@@ -402,6 +471,37 @@ a.tel.tel-black:hover {
 
 footer {
   background: #292929;
+}
+
+h1.header {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  z-index: 1;
+  padding-left: 2.3rem;
+}
+
+h1.header:before {
+  content: "";
+  position: absolute;
+  background: #ffdf00;
+  height: 150%;
+  width: 70px;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 991px) {
+  h1.header:before {
+    width: 46px;
+  }
+}
+
+@media (max-width: 991px) {
+  h1.header {
+    font-size: 1.4rem;
+    padding-left: 1.7rem;
+  }
 }
 
 h2.header {

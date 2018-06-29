@@ -44,7 +44,7 @@
                 <div class="col-12 col-lg-6 p-4 mh-100">
                     <div class="row service-block h-100 d-flex">
                         <div class="col-12 col-lg-6 bg-light pl-3 pr-0">
-                            <a href="/">
+                            <a href="/services/dezinsection">
                             <picture class="float-right float-lg-none">
                                 <img srcset="/img/content/dezinsect.jpg" alt="responsive image" data-aos="fade-up" class="d-block img-fluid">
                             </picture></a>
@@ -60,15 +60,15 @@
                                 насекомых и вредителей
                                 растительности</p>
                         </div>
-                        <div class="col-12 bg-light mt-2 align-self-end" data-aos="flip-up" data-aos-delay="800">
-                            <a class="btn btn-primary float-lg-right m-3">Подробнее</a>
+                        <div class="col-12 bg-light mt-2 align-self-end" data-aos="flip-up" data-aos-delay="300">
+                            <a class="btn btn-primary btn-pulse  float-lg-right m-3" href="/services/dezinsection">Подробнее</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 p-4 mh-100">
                     <div class="row service-block h-100 d-flex">
                         <div class="col-12 col-lg-6 bg-light pl-3 pr-0">
-                            <a href="/">
+                            <a href="/services/deratization">
                                 <picture class="">
                                     <img srcset="/img/content/derat.jpg" alt="responsive image" data-aos="fade-up" class="d-block img-fluid">
                                 </picture></a>
@@ -79,8 +79,8 @@
                             <p>мышей, крыс, кротов,
                                 сусликов, полевок</p>
                         </div>
-                        <div class="col-12 bg-light mt-2 align-self-end" data-aos="flip-up" data-aos-delay="800">
-                            <a class="btn btn-primary float-lg-right m-3">Подробнее</a>
+                        <div class="col-12 bg-light mt-2 align-self-end" data-aos="flip-up" data-aos-delay="300">
+                            <a class="btn btn-primary btn-pulse  float-lg-right m-3" href="/services/deratization">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                 <div class="col-12 col-lg-6 p-4 mh-100">
                     <div class="row service-block h-100 d-flex">
                         <div class="col-12 col-lg-6 bg-light pl-3 pr-0">
-                            <a href="/">
+                            <a href="/services/dezinfection">
                                 <picture class="float-right float-lg-none">
                                     <img srcset="/img/content/dezinfect.jpg" alt="responsive image" data-aos="fade-up" class="d-block img-fluid">
                                 </picture></a>
@@ -101,15 +101,15 @@
                                 плесени, вирусов,
                                 инфекции</p>
                         </div>
-                        <div class="col-12 bg-light mt-2 align-self-end" data-aos="flip-up" data-aos-delay="800">
-                            <a class="btn btn-primary float-lg-right m-3">Подробнее</a>
+                        <div class="col-12 bg-light mt-2 align-self-end" data-aos="flip-up" data-aos-delay="300">
+                            <a class="btn btn-primary btn-pulse  float-lg-right m-3" href="/services/dezinfection">Подробнее</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 p-4 mh-100">
                     <div class="row service-block h-100 d-flex">
                         <div class="col-12 col-lg-6 bg-light pl-3 pr-0">
-                            <a href="/">
+                            <a href="/services/dezodoration">
                                 <picture class="">
                                     <img srcset="/img/content/dezodor.jpg" alt="responsive image" data-aos="fade-up" class="d-block img-fluid">
                                 </picture></a>
@@ -125,8 +125,8 @@
                                 подвальных, и подсобных
                                 помещениях</p>
                         </div>
-                        <div class="col-12 bg-light mt-2 align-self-end" data-aos="flip-up" data-aos-delay="800">
-                            <a class="btn btn-primary float-lg-right m-3">Подробнее</a>
+                        <div class="col-12 bg-light mt-2 align-self-end" data-aos="flip-up" data-aos-delay="300">
+                            <a class="btn btn-primary btn-pulse  float-lg-right m-3" href="/services/dezodoration">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
 
             </div>
             <div class="text-center w-100">
-                <a class="btn btn-dark text-uppercase my-3" href="#"  data-toggle="modal" data-target="#callModal" data-type="Главная - наши преимущества" >Заказать звонок</a>
+                <a class="btn btn-dark btn-pulse text-white text-uppercase my-3" href="#"  data-toggle="modal" data-target="#callModal" data-type="Главная - наши преимущества" >Заказать звонок</a>
             </div>
         </div>
     </section>
@@ -234,7 +234,7 @@
                                 - Всегда протирайте поверхность от влаги и мусора<br>
                                 - Соблюдайте чистоту по всей квартире, особенно на кухне и ванной</p>
                             <div class="text-center w-100">
-                                <a class="btn btn-primary text-uppercase my-3" href="#"  data-toggle="modal" data-target="#callModal" data-type="Главная - полезные советы" >Заказать дезинсекцию</a>
+                                <a class="btn btn-primary btn-pulse text-uppercase my-3" href="#"  data-toggle="modal" data-target="#callModal" data-type="Главная - полезные советы" >Заказать дезинсекцию</a>
                             </div>
                         </div>
 
@@ -247,7 +247,7 @@
                                 - Покупая мебель, осмотрите ее на наличие насекомых<br>
                                 - Осматривайте ваших питомцев после прогулки на улице</p>
                             <div class="text-center w-100">
-                                <a class="btn btn-primary text-uppercase my-3" href="#"  data-toggle="modal" data-target="#callModal" data-type="Главная - полезные советы" >Заказать дезинсекцию</a>
+                                <a class="btn btn-primary btn-pulse text-uppercase my-3" href="#"  data-toggle="modal" data-target="#callModal" data-type="Главная - полезные советы" >Заказать дезинсекцию</a>
                             </div>
                         </div>
                     </div>
@@ -278,7 +278,7 @@
             <div class="col-12 col-lg-4 offset-lg-2 p-5 d-flex flex-column justify-content-center" data-aos="zoom-in-left">
                 <p class="lead">
                     @svg('mobile-alt', 'svg-15 mr-3 animated tada infinite', ['style' => 'animation-duration: 2.5s'])
-                    <a class="tel tel-black mr-5" href="tel:+79637387434">+7-963-738-7434</a>
+                    <a class="tel tel-black mr-5" href="tel:{{$contacts['phone']}}">{{$contacts['phoneFormatted']}}</a>
                 </p>
                 <p class="lead">
                     @svg('map-marker-alt', 'mr-3')
@@ -296,7 +296,7 @@
         </div>
         <div class="row">
             <div class="col text-center">
-                <a class="btn btn-dark text-uppercase my-3" href="#" data-toggle="modal" data-target="#callModal" data-type="Главная - контакты" >Заказать звонок</a>
+                <a class="btn btn-dark btn-pulse text-uppercase my-3" href="#" data-toggle="modal" data-target="#callModal" data-type="Главная - контакты" >Заказать звонок</a>
             </div>
         </div>
     </section>

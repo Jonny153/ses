@@ -39004,6 +39004,7 @@ $('#callModal').on('show.bs.modal', function (event) {
     var type = button.data('type');
     var modal = $(this);
     modal.find("input[name*='type']").val(type);
+    yaCounter49423033.reachGoal('CALL_MODAL');
 });
 
 /***/ }),

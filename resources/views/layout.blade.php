@@ -35,13 +35,15 @@
                     <div class="tel-block">
                         {{--<i class="fas fa-mobile-alt text-white mr-3 animated tada infinite" style="animation-duration: 2.5s;"></i>--}}
 
-                        <a class="tel mr-5" href="tel:+79637387434">
+                        <a class="tel mr-5" href="tel:{{$contacts['phone']}}">
                             @svg('mobile-alt', 'svg-15 text-white mr-3 animated tada infinite', ['style' => 'animation-duration: 2.5s'])
-                            +7-963-738-7434
+                            {{$contacts['phoneFormatted']}}
                         </a>
                     </div>
 
-                    <a href="#" data-noscroll data-toggle="modal" data-target="#callModal" data-type="Верхнее меню" class="btn btn-primary text-uppercase font-weight-semibold mr-5 d-none d-lg-block">Заказать звонок</a>
+                    <a href="#" data-noscroll data-toggle="modal" data-target="#callModal" data-type="Верхнее меню"
+                       class="btn btn-primary btn-pulse text-white text-uppercase font-weight-semibold mr-5 d-none d-lg-block">
+                        <span class="text-dark">Заказать звонок</span></a>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -54,17 +56,17 @@
 
                         <div class="col-xs-12 col-sm-6 col-lg-3 py-2 order-sm-2">
                             <nav class="nav main flex-column text-center">
-                                <a class="nav-link" href="/service/dezinsection">@svg('insect', 'mr-2') Дезинсекция</a>
-                                <a class="nav-link" href="/service/deratization">@svg('rat', 'mr-2') Дератизация</a>
-                                <a class="nav-link" href="/service/dezinfection">@svg('bacteria', 'mr-2') Дезинфекция</a>
-                                <a class="nav-link" href="/service/dezodoration">@svg('smell', 'mr-2') Дезодорация</a>
+                                <a class="nav-link" href="/services/dezinsection">@svg('insect', 'mr-2') Дезинсекция</a>
+                                <a class="nav-link" href="/services/deratization">@svg('rat', 'mr-2') Дератизация</a>
+                                <a class="nav-link" href="/services/dezinfection">@svg('bacteria', 'mr-2') Дезинфекция</a>
+                                <a class="nav-link" href="/services/dezodoration">@svg('smell', 'mr-2') Дезодорация</a>
                             </nav>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-3 py-2">
                             <nav class="nav flex-column  text-center">
 
                                 <a class="nav-link" href="/">Главная</a>
-                                <a class="nav-link" href="/service">Услуги</a>
+                                <a class="nav-link" href="/services">Услуги</a>
                                 <a class="nav-link" href="/about">О компании</a>
                                 <a class="nav-link" href="/advice">Полезные советы</a>
                                 <a class="nav-link" href="/contacts">Контакты</a>
@@ -89,7 +91,7 @@
                         <nav class="nav flex-column  text-center">
 
                             <a class="nav-link" href="/">Главная</a>
-                            <a class="nav-link" href="/service">Услуги</a>
+                            <a class="nav-link" href="/services">Услуги</a>
                             <a class="nav-link" href="/about">О компании</a>
                             <a class="nav-link" href="/advice">Полезные советы</a>
                             <a class="nav-link" href="/contacts">Контакты</a>
@@ -97,10 +99,10 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 col-lg-4 py-2 order-lg-3">
                         <nav class="nav main flex-column text-center">
-                            <a class="nav-link" href="/service/dezinsection">@svg('insect', 'mr-2') Дезинсекция</a>
-                            <a class="nav-link" href="/service/deratization">@svg('rat', 'mr-2') Дератизация</a>
-                            <a class="nav-link" href="/service/dezinfection">@svg('bacteria', 'mr-2') Дезинфекция</a>
-                            <a class="nav-link" href="/service/dezodoration">@svg('smell', 'mr-2') Дезодорация</a>
+                            <a class="nav-link" href="/services/dezinsection">@svg('insect', 'mr-2') Дезинсекция</a>
+                            <a class="nav-link" href="/services/deratization">@svg('rat', 'mr-2') Дератизация</a>
+                            <a class="nav-link" href="/services/dezinfection">@svg('bacteria', 'mr-2') Дезинфекция</a>
+                            <a class="nav-link" href="/services/dezodoration">@svg('smell', 'mr-2') Дезодорация</a>
                         </nav>
                     </div>
                     <div class="col-12 col-lg-4 d-flex order-lg-2">
@@ -113,7 +115,7 @@
             </div>
             <section class="bg-dark p-3 mt-4">
                 <div class="container">
-                    <p class="mb-0 text-primary">&copy;@php echo date('Y'); @endphp Компания «СЭС-life» <a href="maito:info@ses-life.ru">info@ses-life.ru</a></p>
+                    <p class="mb-0 text-primary">&copy;@php echo date('Y'); @endphp Компания «СЭС-life» <a href="maito:{{$contacts['email']}}">{{$contacts['email']}}</a></p>
                 </div>
             </section>
         </footer>
