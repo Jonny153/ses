@@ -27,7 +27,8 @@ class PagesController extends Controller
     {
         abort_if(!in_array($page, $this->pages), 404);
 
-        if ($page == 'services' && in_array($subpage, $this->services)) {
+        if ($page == 'services' && $subpage) {
+            abort_if(!in_array($subpage, $this->services), 404);
             return view('services.' . $subpage);
         }
 

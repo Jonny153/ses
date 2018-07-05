@@ -12,7 +12,8 @@
   font-weight: 600 !important;
 }
 
-a.black {
+a.black,
+a.text {
   color: black;
   font-size: inherit;
   text-decoration: none;
@@ -22,10 +23,23 @@ a.black {
 
 a.black:hover,
 a.black:active,
-a.black:focus {
+a.black:focus,
+a.text:hover,
+a.text:active,
+a.text:focus {
   text-decoration: none;
   outline: none;
   color: #ffdf00;
+}
+
+a.text {
+  text-decoration: underline;
+}
+
+a.text:hover,
+a.text:active,
+a.text:focus {
+  text-decoration: underline;
 }
 
 button:active,
@@ -467,6 +481,28 @@ a.tel.tel-black:hover {
   width: 27px;
   height: 118px;
   background-size: 100% 100%;
+}
+
+.content .list-group-item.active {
+  color: black;
+}
+
+.content h2.subheader {
+  position: relative;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.content h2.subheader:after {
+  content: "";
+  position: absolute;
+  background: #ffdf00;
+  height: 4px;
+  width: 100px;
+  margin-left: -50px;
+  left: 50%;
+  z-index: 1;
+  bottom: 15px;
 }
 
 footer {

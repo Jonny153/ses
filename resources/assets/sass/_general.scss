@@ -2,7 +2,8 @@
     font-weight: 600 !important;
 }
 
-a.black {
+a.black,
+a.text {
     color: black;
     font-size: inherit;
     text-decoration: none;
@@ -15,6 +16,18 @@ a.black {
         color: $primary;
     }
 }
+a.text {
+
+    text-decoration: underline;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: underline;
+
+    }
+}
+
 
 // Buttons fix
 button:active, button:focus {
@@ -387,6 +400,37 @@ a.tel.tel-black {
 
     }
 }
+
+
+.content {
+    .list-group-item {
+        &.active {
+            color: black;
+        }
+    }
+
+    h2.subheader {
+
+        position: relative;
+        display: block;
+        padding-bottom: 2rem;
+        &:after{
+            content: "";
+            position: absolute;
+            background: $primary;
+            height: 4px;
+            width: 100px;
+            margin-left: -50px;
+            left: 50%;
+            z-index: 1;
+            bottom: 15px;
+        }
+
+    }
+
+}
+
+
 
 
 footer {
