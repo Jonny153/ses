@@ -13,7 +13,7 @@
         <meta name="msapplication-TileColor" content="#000000">
         <meta name="theme-color" content="#ffffff">
 
-        <title>Laravel</title>
+        <title>Laravelll</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
